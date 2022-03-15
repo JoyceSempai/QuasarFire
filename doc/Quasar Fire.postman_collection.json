@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "f1204bae-bab6-4f7a-bc7c-ec0e97dd62a1",
+		"name": "Quasar Fire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "topsecret",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"satellites\": [\r\n        {\r\n            \"name\" : \"kenobi\",\r\n            \"distance\" : 100,\r\n            \"message\" : [\"este\",\"\",\"\",\"mensaje\",\"\"]\r\n        },\r\n        {\r\n            \"name\" : \"skywalker\",\r\n            \"distance\" : 115.5,\r\n            \"message\" : [\"\",\"es\",\"\",\"\",\"secreto\"]\r\n        },\r\n        {\r\n            \"name\" : \"sato\",\r\n            \"distance\" : 142.7,\r\n            \"message\" : [\"este\",\"\",\"un\",\"\",\"\"]\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split-kenobi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"distance\": 100.0,\r\n    \"message\" : [\"este\",\"\",\"\",\"mensaje\",\"\"]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/kenobi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						"kenobi"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split-skywalker",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"distance\": 115.5,\r\n    \"message\" : [\"\",\"es\",\"\",\"\",\"secreto\"]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/skywalker",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						"skywalker"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split-sato",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"distance\": 142.7,\r\n    \"message\" : [\"este\",\"\",\"un\",\"\",\"\"]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/sato",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						"sato"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split-other",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"distance\": 142.7,\r\n    \"message\" : [\"este\",\"\",\"un\",\"\",\"\"]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/other",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						"other"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split-other",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split/other",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split",
+						"other"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topsecret_split",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/topsecret_split",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topsecret_split"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
